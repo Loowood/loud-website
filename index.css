@@ -1,17 +1,44 @@
 
+@font-face {
+	font-family: "Oswald-Light";
+	src:"Oswald-Light.ttf";
+}
+
 body {
-    background-image: url('https://wallpaperbrowse.com/media/images/colors_explosion_wallpaper_abstract_3d_45.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color : #ab2b32
 }
 
 .header {
-    font: "Oswald";
+    font-family: 'Oswald', Light;
     text-align: center;
     color: white;
-    margin-left: 5%;
-    margin-top: 40px;
-    font-size: 15px;
+    margin-left: 12%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.logofb {
+	margin-left: 17%;
+	margin-top: 7px;
+	height:26px;
+	width: 26px;
+	background-image: url("fbblanc.png");
+}
+
+.logofb:hover {
+	background-image: url("fbcouleur.png");
+}
+
+.logoinsta {
+	margin-left: 1%;
+	margin-top: 7px;
+	height:26px;
+	width: 26px;
+	background-image: url("instablanc.png");
+}
+
+.logoinsta:hover {
+	background-image: url("instacouleur.png");
 }
 
 ul {
@@ -23,14 +50,15 @@ ul {
 
 li {
     float: left;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
-.logo-rect {
-    width: 589px;
-    height: 323px;
-    background-color: darkgreen;
-    margin-left: 440px;
-    margin-top: 200px;
+.logo {
+    margin-left: 30%;
+    margin-top: 6%;
     position: absolute;
+    width:40%;
+
 }
+
+
