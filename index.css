@@ -1,27 +1,39 @@
 
 @font-face {
-	font-family: "Oswald-Light";
-	src:"Oswald-Light.ttf";
+	font-family: 'Oswald-Light';
+	src: url("Oswald-Light.ttf");
+}
+
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color : #ab2b32
+    background-color : #ab2b32;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .header {
-    font-family: 'Oswald', Light;
+    font-family: 'Oswald Light';
     text-align: center;
     color: white;
     margin-left: 12%;
+	margin-right: 12%;
     margin-top: 2%;
-    font-size: 20px;
+    font-size: 110%;
+	display: flex;
+	width: auto;
 }
 
 .logofb {
-	margin-left: 17%;
-	margin-top: 7px;
-	height:26px;
-	width: 26px;
+	height: 24px;
+	width: 24px;
 	background-image: url("fbblanc.png");
 }
 
@@ -30,10 +42,8 @@ body {
 }
 
 .logoinsta {
-	margin-left: 1%;
-	margin-top: 7px;
-	height:26px;
-	width: 26px;
+	height: 24px;
+	width: 24px;
 	background-image: url("instablanc.png");
 }
 
@@ -43,22 +53,46 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px auto;
     padding: 0;
     overflow: hidden;
+	width: auto;
+	display: flex;
+	justify-content: center;
 }
 
-li {
+#navbar {
+	width: 90%;
+}
+
+#navbar li {
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
+	margin-right: 3%;
+	width: auto;
+}
+
+#logos {
+	width: 10%;
+}
+
+#logos li {
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .logo {
     margin-left: 30%;
     margin-top: 6%;
     position: absolute;
-    width:40%;
-
+    width: 40%;
 }
+
+.headerDivs {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
