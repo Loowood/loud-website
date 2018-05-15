@@ -1,0 +1,168 @@
+@font-face {
+	font-family: 'Oswald-Light';
+	src: url("Oswald-Light.ttf");
+}
+
+body {
+	height: 100%;
+}
+
+#outerBox {
+	width: auto;
+	min-height: 100%;
+	margin-left: 20%;
+	margin-right: 20%;
+	overflow: auto;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+#placeholder-image {
+	width: auto;
+	height: 80%;
+	display: inline-block;
+}
+
+#navbar {
+	height: 20%;
+	color: white;
+}
+
+#upperBox {
+	height: 300px;
+}
+
+#contentOuterBox {
+	background-color: #FFFFFF;
+	padding-bottom: 5%;
+}
+
+h1 {
+	padding-top: 25px;
+	font-family: 'Oswald Light';
+	font-size: 50px;
+}
+
+.image-replacement {
+	/*background-color: aqua;*/
+	background-image: url('https://anniversaire-celebrite.com/upload/250x333/achille-talon-250.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#main-article-image {
+	height: 645px;
+}
+
+.main-article {
+	height: 645px;
+	width: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.article {
+	height: 350px;
+	margin: 10%;
+	/*background-color: cadetblue;*/
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.articlesDiv {
+	width: auto;
+	/*background-color: chocolate;*/
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.articles {
+	width: 100%;
+}
+
+.image-article {
+	width: 100%;
+	height: 70%;
+	padding-bottom: 30px;
+	background-image: url('https://i.imgur.com/ere91Fy.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.article h1{
+	font-family: 'Oswald Light';
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.article #content span{
+	float: left;
+	padding: 0;
+	font-size: 13px;
+}
+
+.article #content #vertical-bar {
+	width: 4px;
+	height: 90%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10%;
+	background-color: red;
+}
+
+.article #content {
+	display: inline-flex;
+	text-align: left;
+}
+
+.black_square {
+	width: 60%;
+	height: auto;
+	background-color: #1E1A1B;
+	padding: 0px;
+	margin-left: 20.25%;
+	margin-right: 20.25%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	position:relative;
+}
+
+
+.black_square table{
+	padding: 3%;
+    margin: 0px auto;
+    overflow: hidden;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	border-spacing: 20px;
+	border-collapse: separate;
+}
+
+.black_square td{
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px;
+	width: 150px;
+	height: 100px;
+}
+
+
+.black_bottom{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	background-color: #1E1A1B;
+	padding-bottom: 0%;
+	margin-bottom: 0%;
+	bottom: 0;
+	position: relative;
+}
+
+.black_bottom p{
+	font-size: 9px;
+	color: grey;
+	margin-left: 46.5%;
+}
