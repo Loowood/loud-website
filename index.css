@@ -65,7 +65,7 @@ ul {
 	width: 90%;
 }
 
-#navbar li {
+#navbar a {
     float: left;
     margin-left: 3%;
 	margin-right: 3%;
@@ -96,5 +96,6 @@ ul {
 
 a {
 	color: white;
+	text-decoration: none;
 }
 
