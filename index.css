@@ -49,7 +49,7 @@ body {
 	background-image: url("instacouleur.png");
 }
 
-ul {
+.headerDivsIndex ul {
     list-style-type: none;
     margin: 0px auto;
     padding: 0;
