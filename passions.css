@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'Oswald-Light';
-	src: url("Oswald-Light.ttf");
-}
-
 body {
 	height: 100%;
 }
@@ -19,13 +14,23 @@ body {
 
 #placeholder-image {
 	width: auto;
-	height: 80%;
+	height: 90%;
 	display: inline-block;
 }
 
 #navbar {
-	height: 20%;
+	width: 100%;
+	height: 10%;
 	color: white;
+	font-size: 25px;
+}
+
+#navbar a {
+	margin: auto;
+}
+
+#firstMenu {
+	margin-left: 0;
 }
 
 #upperBox {
@@ -35,10 +40,12 @@ body {
 #contentOuterBox {
 	background-color: #FFFFFF;
 	padding-bottom: 5%;
+	margin-top: 2%;
 }
 
 h1 {
-	padding-top: 25px;
+	padding-top: 2%;
+	margin-top: 0;
 	font-family: 'Oswald Light';
 	font-size: 50px;
 }
