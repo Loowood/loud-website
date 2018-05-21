@@ -12,10 +12,32 @@ body {
 	margin-bottom: 5%;
 }
 
+/******************************
+
+	Logo + Navbar
+
+*******************************/
+
+#upperBox {
+	width: 100%;
+	margin-bottom: 3%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 #placeholder-image {
-	width: auto;
+	margin: auto;
+	width: 50%;
 	height: 90%;
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
+}
+
+#placeholder-image a img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #navbar {
@@ -23,8 +45,10 @@ body {
 	height: 10%;
 	color: white;
 	font-size: 25px;
-	display: inline-flex;
-	justify-content: center;
+	display: flex;
+	justify-content: flex-start;
+	border: solid 1px #000000;
+	flex-direction: row;
 }
 
 #navbar ul {
@@ -35,35 +59,34 @@ body {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#navbar li {
+	flex: 0 0 20%;
 }
 
 #navbar a {
-	flex: 5;
+	flex: 0 0 20%;
 	white-space: nowrap;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-a#firstMenu {
-	text-align: left;
-	margin-left: 0;
-	margin-right: 0;
-}
 
-a#lastMenu {
-	text-align: right;
-	margin-left: 0;
-	margin-right: 0;
-}
 
-#upperBox {
-	height: 300px;
-	margin-bottom: 3%;
-}
+
+
+
+
 
 #contentOuterBox {
 	background-color: #FFFFFF;
 	padding-bottom: 5%;
 	margin-top: 2%;
+	position: relative;
 }
 
 h1 {
@@ -79,6 +102,14 @@ h1 {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+
+/******************************
+
+	Articles
+
+*******************************/
+
 #main-article-image {
 	height: 645px;
 }
@@ -147,37 +178,42 @@ h1 {
 	text-align: left;
 }
 
+
+/******************************
+
+	Footer
+
+*******************************/
+
 .black_square {
-	width: 60%;
-	height: auto;
-	background-color: #1E1A1B;
-	padding: 0px;
-	margin-left: 20.25%;
-	margin-right: 20.25%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	position:relative;
+  width: 60%;
+  height: auto;
+  background-color: #1E1A1B;
+  padding: 0px;
+  margin-left: 20.25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  position:relative;
 }
 
 
 .black_square table{
-	padding: 3%;
-    margin: 0px auto;
-    overflow: hidden;
-	width: auto;
-	display: flex;
-	justify-content: center;
-	border-spacing: 20px;
-	border-collapse: separate;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-spacing: 30px 0px;
 }
 
-.black_square td{
-	border-style: solid;
-	border-color: grey;
-	border-width: 2px;
-	width: 150px;
-	height: 100px;
+
+.logoSeamkBlanc {
+  width:90%;
+  margin-left: 60%
 }
+
+.logoBstrBlanc {
+  width:30%;
+  margin-left: 45%
+}
+
 
 
 .black_bottom{
@@ -195,4 +231,10 @@ h1 {
 	font-size: 9px;
 	color: grey;
 	margin-left: 46.5%;
+}
+
+@media (max-width: 1000px) {
+	#navbar a {
+		flex: 0 0 25%;
+	}
 }
