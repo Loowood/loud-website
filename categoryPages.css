@@ -47,7 +47,6 @@ body {
 	font-size: 25px;
 	display: flex;
 	justify-content: flex-start;
-	border: solid 1px #000000;
 	flex-direction: row;
 }
 
