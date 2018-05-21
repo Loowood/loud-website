@@ -1,0 +1,30 @@
+.topDiv{
+	width: 0px;
+	height: 15%;
+	float: right;
+}
+
+.border.box{
+	clear: both;
+	width: 20%;
+	min-height: 70%;
+	border: 7px solid green;
+	padding: 7px;
+	margin: 7px;
+	margin-left: 25px;
+	float: right;
+}
+
+.text p.boxText{
+	font-size: 15px;
+	font-style: italic;
+}
+
+.text p.boxText.title{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.text p.articleBody{
+	text-align: justify;
+}
