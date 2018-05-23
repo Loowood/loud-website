@@ -135,6 +135,16 @@ a {
 	display: none;
 }
 
+#phone_navbar
+{
+	display: none;
+}
+
+.logo2
+{
+	display: none;
+}
+
 @media only screen and (max-width: 1000px)
 {
 	.video-foreground,
@@ -175,6 +185,7 @@ a {
 
 	#phone_navbar ul
 	{
+		display: block;
 	    font-family: 'Oswald', sans-serif;
 	    text-align: center;
 		font-size: 320%;	
@@ -185,6 +196,7 @@ a {
 
 	.logo2
 	{
+		display: block;
 		margin-left: 13%;
 		margin-top: -10%;
    		position: absolute;
