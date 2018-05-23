@@ -1,11 +1,6 @@
-body{
-	background-color : #ab2b32;
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
+body {
+	height: 100%;
 }
-
 
 #outerBox {
 	width: auto;
@@ -82,23 +77,22 @@ body{
 #contentOuterBox {
 	background-color: #FFFFFF;
 	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
 	margin-top: 2%;
 	position: relative;
 }
 
 h1 {
 	padding-top: 2%;
+	padding-bottom: 1%;
 	margin-top: 0;
-	font-family: 'Oswald Light';
+	margin: 0;
+	font-family: 'Source Sans Pro';
 	font-size: 50px;
 }
 
-.image-replacement {
-	/*background-color: aqua;*/
-	background-image: url('https://anniversaire-celebrite.com/upload/250x333/achille-talon-250.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+
 
 
 /******************************
@@ -108,19 +102,19 @@ h1 {
 *******************************/
 
 #main-article-image {
-	height: 645px	;
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
 }
 
 .main-article {
-	height: 645px;
-	width: auto;
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .article {
-	height: 350px;
-	margin: 10%;
+	width: 85%;
 	/*background-color: cadetblue;*/
 	display: flex;
 	flex-direction: column;
@@ -130,24 +124,30 @@ h1 {
 .articlesDiv {
 	width: auto;
 	/*background-color: chocolate;*/
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .articles {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.articles tr {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 .image-article {
 	width: 100%;
-	height: 70%;
-	padding-bottom: 30px;
-	background-repeat: no-repeat;
-	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 5px;
 }
 
 .article h1{
-	font-family: 'Oswald Light';
+	font-family: 'Baskerville';
 	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 20px;
@@ -158,6 +158,7 @@ h1 {
 	float: left;
 	padding: 0;
 	font-size: 13px;
+	font-family: 'Source Sans Pro';
 }
 
 .article #content #vertical-bar {
@@ -175,11 +176,31 @@ h1 {
 }
 
 
+
 /******************************
 
 	Footer
 
 *******************************/
+
+
+.articles td {
+	display: flex;
+	flex-direction: row;
+	vertical-align: top;
+	width: 50%;
+	border: 0;
+	padding: 0;
+	margin-left: 0;
+}
+
+td.left {
+	justify-content: flex-start;
+}
+
+td.right {
+	justify-content: flex-end;
+}
 
 .black_square {
   width: 60%;
@@ -210,8 +231,6 @@ h1 {
   margin-left: 45%
 }
 
-
-
 .black_bottom{
 	overflow: hidden;
 	width: 100%;
@@ -229,217 +248,8 @@ h1 {
 	margin-left: 46.5%;
 }
 
-.page
-{
-	display: none;
-}
-
-/* mobile phone size & iPad size for example */
-
-@media screen and (max-width: 1000px)
-{
-
-	#outerBox
-	{
-		display: none;
-	}
-
-	.black_square
-	{
-		display: none;
-	}
-
-	.black_bottom
-	{
-		display: none;
-	}
-
-	.page
-	{
-		z-index: 1500;
-		display: block;
-		margin: auto;
-		width: 90%;
-	}
-
-	img {
-		width: 100%;
-	}
-	.ie6 img {
-		width: 100%;
-	}
-
-
-	@font-face {
-		font-family: 'Oswald-Light';
-		src: url("Oswald-Light.ttf");
-	}
-
-	html{
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
-	.header {
-		font-family: 'Oswald Light';
-		text-align: center;
-		color: white;
-		font-size: 110%;
-		display: flex;
-		width: auto;
-		margin-top: 20%;
-		margin-bottom: 5%;
-		z-index: 100;
-		position: relative;
-		justify-content: center;
-	}
-
-	ul {
-		list-style-type: none;
-		margin: 0px auto;
-		padding: 0;
-		overflow: hidden;
-		width: auto;
-		display: flex;
-		z-index: 1000;
-		position: absolute;
-		justify-content: center;
-	}
-
-	#navbar {
-		width: 90%;
-	}
-
+@media (max-width: 1000px) {
 	#navbar a {
-		float: left;
-		margin-left: 3%;
-		margin-right: 3%;
-		width: auto;
-		color: white;
-		text-decoration: none;
+		flex: 0 0 25%;
 	}
-
-	.logo {
-		position: absolute;
-		z-index: 150;
-		width:50%;
-		margin-top: -12%;
-	}
-
-	.headerDivs {
-		display: inline;
-	}
-
-	.white_square {
-	  width: 90%;
-	  height:auto;
-	  background-color: white;
-	  padding: 0;
-	  margin-left: 6%;
-	  margin-top: 2%;
-	  position:relative;
-	  margin-bottom: 10%
-	}
-
-/*content*/
-	.title{
-		font-size: 40px;
-		z-index: 300;
-		font-family: 'Oswald';
-		padding-left: 7%;
-		padding-top: 5%;
-	}
-
-	p{
-		font-family: 'Oswald';
-		padding-left: 7%;
-		padding-top: 0;
-		padding-bottom: 5%;
-		margin: 0;
-	}
-	a{
-		text-decoration: none;
-		color: black;
-	}
-
-
-	/* MENU BUTTON */
-
-	.dropbtn {
-		background-color: #ab2b32;
-		color: white;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-		display: inline-block;
-		margin-top: 14em;
-	}
-
-	h1{
-		position: absolute;
-		margin-top: 2.7em;
-		margin-left: 5%;
-		color: #FFF;
-		font-size: 5em;
-	}
-
-
-	.bar1, .bar2, .bar3 {
-		border-radius: 25px;
-		width: 65px;
-		height: 10px;
-		background-color: #FFF;
-		margin: 6px 0;
-		transition: 0.4s;
-	}
-
-	.change .bar1 {
-		-webkit-transform: rotate(-45deg) translate(-6px, 6px);
-		transform: rotate(-45deg) translate(-14px, 12px);
-	}
-
-	.change .bar2 {
-		opacity: 0;
-	}
-
-	.change .bar3 {
-		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-		transform: rotate(45deg) translate(-9px, -12px);
-	}
-
-	.dropdown {
-		display: inline-block;
-		margin-left: 48em;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		right: 4em;
-		background-color: #1b2433;
-		min-width: 50em;
-		overflow: auto;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-		text-align: center;
-		padding: 2em;
-	}
-
-	.dropdown-content a {
-		color: #FFF;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		font-size: 3em;
-	}
-
-	.dropdown-content a:active{	/* changes the color when you click on it */
-		color: #abafb5;
-	}
-
-	.show {display:block;}
-	
 }
