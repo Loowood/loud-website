@@ -9,15 +9,36 @@
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Oswald:300|Source+Sans+Pro:200,300,400" rel="stylesheet">
     </head>
     <body>
-
         <?php include("../top.php"); ?>
 
         <div class="white_square">
-          <figure class="images">
-            <img id="image1" src="Karttapaikat.jpg" alt="Karttapaikat">
-            <img id="image1" src="LOUDKARTTAVALMIS-01.jpg" alt="LOUDKARTTAVALMIS-01">
-          </figure>
+          <div class="text">
+            <p id="header">SUOLAISTA MAKEAA</p>
+
+            <p id="first">Salmiakin juuret ylettyvät ajalle jo ennen Talvisotaa ja se on vieläkin monen lauantaiherkku ja ulkomaalaiset halajavat sen maistamista.</p>
+
+            <p id="author">Text: Iida Mattila Photo: Noora Talasmäki</p>
 			
+            <p>
+            Suomalaiset rakastavat ja ulkomaalaiset eivät sitä voi sietää. Salmiakki on makuasia, josta nimenomaan jaksetaan kiistellä, mutta miksi? Salmiakin historia on alkanut 1930-luvulla. Salmiakki syntyi olettaen apteekeissa valmistetusta yskänlääkkeestä. Siitä ei ole tarkkaa tietoa, milloin lakritsi ja ammoniumkloridi löysivät toisensa, mutta salmiakkia kuitenkin myytiin jo useiden vuosikymmenten ajan yskänlääkkeenä. Apteekkien salmiakki oli siitä tehtyä jauhetta, jolloin sen ammoniumkloridipitoisuus oli korkeampaa kuin makeissalmiakin. Salmiakin alkuperäinen väri on valkoinen, mutta salmiakin alkuaikoina sitä aloitettiin värjäämään mustaksi lääkehiilellä, koska se koettiin niin houkuttelevammaksi.
+            </p>
+
+            <p id="main">"Tämä maistuu jaloille."</p>
+
+            <p>Vanhan ajan salmiakkijauhe kaadettiin kädelle, josta se nuoltiin pois. Tämä syömistapa ei kauaa kestänyt, epähygieenisyydeltään kestänyt kauaa. Makeisten lisäksi salmiakkia käytetään virvoitusjuomissa ja jopa lihavalmisteissa. Salmiakin maku on sellainen, mitä luultavasti suomalainen ei osaa eritellä, mutta se on todella suolaisen makea yhdistelmä. Jos esimerkiksi tutkii sosiaalista mediaa, siellä tulee vastaan videoita jossa ulkomaalaiset kokeilevat tätä suomalaisten herkkua.
+            </p>
+
+              <figure>
+                <img id="image2" src="Pictures/image_1_b.jpg" alt="poisson">
+                <figcaption id="figcaptionside">A pixelated animation</figcaption>
+              </figure>
+
+            <p>Miksi suomalaiset pitävät salmiakin makua itsestäänselvyytenä? Suomalaisten yleiset makumieltymykset ovat muutenkin pelkistettyjä ja mausteettomia, joten miksi salmiakki on täällä niin suosittua?
+		  	Seinäjoen Ammattikorkeakoulun kaksi vaihto-opiskelijaa ja kaksi suomalaista opiskelijaa saivat maistaa erilaisia salmiakkituotteita muun muassa apteekista ostettua salmiakkipastilleja, -jauhetta ja -tikkareita. Salmiakkipastillit eivät saaneet lämmintä vastaanottoa. Toinen vaihto-opiskelijoista kommentoi: “Tämä maistuu jaloille”. Voimakkain makuelämys oli itse jauhe, jota maistellessa naamojen kipristelyä oli vahvasti havaittavissa. Onneksi salmiakkitikkarit olivat kaikkien mieleen, jolloin salmiakin maistelu saatiin lopetettua hyviin tunnelmiin.</p>
+			  
+          </div>
+          <br>
+
           <div>
             <div id="previous">
               <p>Previous article</p>
@@ -115,7 +136,7 @@
 					//var_dump($dirs);
 					//var_dump($index);
 					//echo $dirs[($index + 1)];
-					if ( $index < sizeOf($dirs) -1){
+					if ( $index != sizeOf($dirs) ){
 						$filesInside = scandir($directory . '\\' . $dirs[($index + 1)]);
 						//var_dump($filesInside);
 						$FileName = '';
@@ -141,16 +162,15 @@
 						} else {
 							// error opening the file.
 						}
-						echo '<a href="../' . $dirs[($index + 1)] . '/' . $FileName . '">' . $NameOfThePage . '</a>';
+						echo '<a href="../' . $dirs[($index + 1)] . '/' . $FileName . '"> SEINAJOKI MAP </a>';
 					}
 				?>
             </div>
           </div>
 
-          <div>
-            <p id="see_also">See Also:</p>
+          <p id="see_also">See Also:</p>
 
-                    <?php include("../bottom.php"); ?>
+          <?php include("../bottom.php"); ?>
 
         <div class="black_bottom">
           <p>LOUD MAGAZINE &copy; 2018<p>

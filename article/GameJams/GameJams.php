@@ -20,7 +20,7 @@
             <p id="author">Text: Loris GIRAUD. Art: Open Pixel Project
             </p>
 
-            <img id="image1" src="beastlands.jpg" alt="Moomin">
+            <img id="image1" src="beastlands.jpg" alt="A typical game art">
             <figcaption>A classic game Pixel Art</figcaption>
 			  
 			<p id="main">THE COVER OF THE MINE
@@ -51,17 +51,133 @@
             <p>Though, not every game needs several years to be made from scratch. Some only take up to a few months, or weeks, or days, or even ... hours to be designed. Indeed, let me introduce you to Game Jams. Game Jams are contests, challenges created by developers, for developers, where people have a certain – rather short – amount of time to produce, generally from scratch, a game. They are often relying on a theme, that is decided just before the contest begins. From here, down to a few days (for the most-hardcore-jams) separate the theme revelation from the end of the submissions deadline. The most known jams are by far the Global Game Jam, and the Ludum Dare. This last contest is happening every 4 months from 2002. It has been created by Geoff Howland in April 2002, making it the first of its kind, and is now run by Mike Kasprzak. It started tiny, around a few friends and achieves now roughly 2000 entries for event. The Ludum Dare is composed of two version of itself, the Compo, and the Jam. The Compo is for the most experienced developers, where they have to build their games from the ground up, all alone, and furnish the source code afterwards, in 48 hours. The Jam is a cooler aspect of the Compo, where teams are allowed, as they have the right to use code samples and an extra day to submit their work. After this, the games are judged by the other creators themselves, and there are no prizes, except from having a finished game that others have enjoyed. Sometimes, games out from this contest gain success and encouragement and they finish being published online, with the other indie games. Though, while the Ludum Dare is the most known competition, a lot more of Jams are running every day, as they push game developers further into creating innovative and original little gems for us players to enjoy.</p>
           </div>
           <br>
-          <hr>
 
           <div>
             <div id="previous">
-              <button>previous article</button>
-              <figcaption> Aliquam erat volutpat</figcaption>
-            </div>
+              <p>Previous article</p>
+              	<?php
+					$directory = dirname(dirname(__FILE__));
+					//var_dump($directory);
+					//get all files in specified directory
+					$files = scandir($directory);
+					$files = array_map('strtolower', $files);
+					sort($files);
+					//var_dump($files);
+					//var_dump($directory . '\\' . $files[5]);
+					//print each file name
+					$index = 0;
+					$dirs = array();
+					$myfile = 'bloups';
+					foreach($files as $file)
+					{
+					 //check to see if the file is a folder/directory
+					 if(is_dir($directory . '\\' . $file))
+					 {
+						if ( $file === strtolower(basename(dirname(__FILE__))) ){
+							//echo "That's me";
+							$myfile = $file;
+						}
+					  	//var_dump($file);
+						array_push($dirs, $file);
+					 }
+					}
+					//var_dump($myfile);
+					$index = array_search($myfile, $dirs);
+					//var_dump($dirs);
+					//var_dump($index);
+					//echo $dirs[($index + 1)];
+					if ( $index > 2 ){
+						$filesInside = scandir($directory . '\\' . $dirs[($index - 1)]);
+						//var_dump($filesInside);
+						$FileName = '';
+						for ($i = 0; $i < sizeof($filesInside); $i ++){
+							if (preg_match('/.php$/', $filesInside[$i])){
+								$FileName = $filesInside[$i];
+							}
+						}
+						$NameOfThePage = '';
+						$handle = fopen($directory . '\\' . $dirs[($index - 1)] . '\\' . $FileName, "r");
+						if ($handle) {
+							while (($line = fgets($handle)) !== false) {
+								// process the line read.
+								if ( preg_match('/<p id="header">/',$line) ) {
+									//var_dump($line);
+									//var_dump (explode(('<'), explode('>', $line)[1])[0]);
+									$NameOfThePage = explode(('<'), explode('>', $line)[1])[0];
+									break;
+								}
+							}
 
+							fclose($handle);
+						} else {
+							// error opening the file.
+						}
+						echo '<a href="../' . $dirs[($index - 1)] . '/' . $FileName . '">' . $NameOfThePage . '</a>';
+					}
+				?>
+            </div>
             <div id="next">
-              <button>next article</button>
-              <figcaption> Aliquam erat volutpat</figcaption>
+              <p>Next article</p>
+              	<?php
+					$directory = dirname(dirname(__FILE__));
+					//var_dump($directory);
+					//get all files in specified directory
+					$files = scandir($directory);
+					$files = array_map('strtolower', $files);
+					sort($files);
+					//var_dump($files);
+					//var_dump($directory . '\\' . $files[5]);
+					//print each file name
+					$index = 0;
+					$dirs = array();
+					$myfile = 'bloups';
+					foreach($files as $file)
+					{
+					 //check to see if the file is a folder/directory
+					 if(is_dir($directory . '\\' . $file))
+					 {
+						if ( $file === strtolower(basename(dirname(__FILE__))) ){
+							//echo "That's me";
+							$myfile = $file;
+						}
+					  	//var_dump($file);
+						array_push($dirs, $file);
+					 }
+					}
+					//var_dump($myfile);
+					$index = array_search($myfile, $dirs);
+					//var_dump($dirs);
+					//var_dump($index);
+					//echo $dirs[($index + 1)];
+					if ( $index != sizeOf($dirs) ){
+						$filesInside = scandir($directory . '\\' . $dirs[($index + 1)]);
+						//var_dump($filesInside);
+						$FileName = '';
+						for ($i = 0; $i < sizeof($filesInside); $i ++){
+							if (preg_match('/.php$/', $filesInside[$i])){
+								$FileName = $filesInside[$i];
+							}
+						}
+						$NameOfThePage = '';
+						$handle = fopen($directory . '\\' . $dirs[($index + 1)] . '\\' . $FileName, "r");
+						if ($handle) {
+							while (($line = fgets($handle)) !== false) {
+								// process the line read.
+								if ( preg_match('/<p id="header">/',$line) ) {
+									//var_dump($line);
+									//var_dump (explode(('<'), explode('>', $line)[1])[0]);
+									$NameOfThePage = explode(('<'), explode('>', $line)[1])[0];
+									break;
+								}
+							}
+
+							fclose($handle);
+						} else {
+							// error opening the file.
+						}
+						echo '<a href="../' . $dirs[($index + 1)] . '/' . $FileName . '">' . $NameOfThePage . '</a>';
+					}
+				?>
             </div>
           </div>
 
