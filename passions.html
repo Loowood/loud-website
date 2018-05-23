@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title> LOUD 2018 </title>
-		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="stylesheet" type="text/css" href="categoryPages.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 		<link rel="icon" type="icon" href="logo2.png">
@@ -25,7 +24,7 @@
 			<div id="contentOuterBox">
 				<h1> PASSION </h1>
 				<div class="main-article">
-						<a href="articles/Dungeons_Dice/Dungeons_Dice.html"><img src="PreviewImages/SAMI-P DRAGONandKNIGHT.png" class="image-replacement" id="main-article-image"></a>
+						<a href="articles_passions/Dungeons_Dice/Dungeons_Dice.html"><img src="PreviewImages_passions/SAMI-P DRAGONandKNIGHT.png" class="image-replacement" id="main-article-image"></a>
 				</div>
 				<div class="articlesDiv">
 
@@ -33,7 +32,7 @@
 						<tr>
 							<td>
 								<div class="article">
-									<a href="articles/Ukulele/ukulele.html"><img src="PreviewImages/uke_img.jpg" class="image-article"></a>
+									<a href="articles_passions/Ukulele/ukulele.html"><img src="PreviewImages_passions/uke_img.jpg" class="image-article"></a>
 									<h1> THE MAGIC SOUND OF UKULELE </h1>
 									<div id="content">
 										<div id="vertical-bar"></div>
@@ -43,7 +42,7 @@
 							</td>
 							<td>
 								<div class="article">
-									<a href="articles/Why So Serious/article.html"><img src="PreviewImages/WhySoSerious_article_preview_pic_web_365x243.jpg" class="image-article"></a>
+									<a href="articles_passions/Why So Serious/article.html"><img src="PreviewImages_passions/WhySoSerious_article_preview_pic_web_365x243.jpg" class="image-article"></a>
 									<h1>WHY SO SERIOUS ?</h1>
 								</div>
 							</td>
@@ -51,7 +50,7 @@
 						<tr>
 							<td>
 								<div class="article">
-									<a href="articles/knife/knife.html"><img src="PreviewImages/butterfly_thumbnail_365_243.jpg" class="image-article"></a>
+									<a href="articles_passions/knife/knife.html"><img src="PreviewImages_passions/butterfly_thumbnail_365_243.jpg" class="image-article"></a>
 									<h1>A FLIPPIN’ AWESOME KNIFE!</h1>
 									<div id="content">
 										<div id="vertical-bar"></div>
@@ -61,7 +60,7 @@
 							</td>
 							<td>
 								<div class="article">
-									<a href="articles/4k_machine/4k_machine.html"><img src="PreviewImages\4K editing_365.png" class="image-article"></a>
+									<a href="articles_passions/4k_machine/4k_machine.html"><img src="PreviewImages_passions\4K editing_365.png" class="image-article"></a>
 									<h1>4K EDITING MACHINE BUILD UNDER 2K</h1>
 									<div id="content">
 										<div id="vertical-bar"></div>
@@ -73,7 +72,7 @@
 						<tr>
 							<td>
 								<div class="article">
-									<a href="articles/roadtolife/roadtolife.html"><img src="PreviewImages/MRTL-BIG.jpg" class="image-article"></a>
+									<a href="articles_passions/roadtolife/roadtolife.html"><img src="PreviewImages_passions/MRTL-BIG.jpg" class="image-article"></a>
 									<h1>MY ROAD TO LIFE</h1>
 									<div id="content">
 										<div id="vertical-bar"></div>
@@ -83,7 +82,7 @@
 							</td>
 							<td>
 								<div class="article">
-									<a href="articles/maailman/maailman.html"><img src="PreviewImages/kyro_preview_365x243.jpg" class="image-article"></a>
+									<a href="articles_passions/maailman/maailman.html"><img src="PreviewImages_passions/kyro_preview_365x243.jpg" class="image-article"></a>
 									<h1>MAAILMAN HUIPULLE RUKIIN AVULLA</h1>
 									<div id="content">
 										<div id="vertical-bar"></div>
@@ -93,8 +92,6 @@
 							</td>
 						</tr>
 					</table>
-
-
 				</div>
 			</div>
 		</div>
@@ -110,10 +107,128 @@
 				</tr>
 			</table>
 		</div>
-
         <div class="black_bottom">
           <p>LOUD MAGAZINE &copy; 2018<p>
         </div>
-	</body>
+        <div class="page">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"> <img src="logo.png"> </a>
+				</div> <!--end of .logo -->
+			</div> <!--end of .header -->
+			<h1> PASSION </h1>
+			<div class="dropdown">
+				<button onclick="drop();  change(this) " class="dropbtn">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="culture.html">CULTURE</a>
+					<a href="entertainment.html">ENTERTAINMENT</a>
+					<a href="passions.html">PASSIONS</a>
+					<a href="student-life.html">STUDENT LIFE</a>
+					<a href="partners.html">PARTNERS</a>
+				</div> <!--end of .dropdown-content -->
+			</div> <!--end of .dropdown -->
+			<script>
+			/* When the user clicks on the button, the bars become a cross */
+			function change(x) {
+				x.classList.toggle("change");
+			}
 
+			/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function drop() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+			</script>
+			<div class="white_square">
+       		<a href="articles_passions/Ukulele/ukulele.html">
+       		<div class="image">
+         	 <img src="PreviewImages_passions/uke_img.jpg" alt="Ukulele">
+         	 <div>
+            <p class="title">THE MAGIC SOUND OF UKULELE</p>
+            <p>The article about Ukulele ! </p>
+         	 </div>
+         	</div>
+    	    </a>
+
+    	    <a href="articles_passions/Dungeons_Dice/Dungeons_Dice.html">
+    	   	<div class="image">
+          	<img src="PreviewImages_passions/SAMI-P DRAGONandKNIGHT.png">
+          	<div>
+            <p class="title">DUNGEONS & DICE</p>
+            <p>You are with your friends. In front of you are dice and papers. The person at the end of the table smiles. ”You find yourself in a tavern on a stormy night.”</p>
+          	</div>
+          	</div>
+       		</a>
+
+        	<a href="articles_passions/knife/knife.html">
+          	<div class="image">
+          	<img src="PreviewImages_passions/butterfly_thumbnail_365_243.jpg">
+          	<div>
+            <p class="title">A FLIPPIN’ AWESOME KNIFE!</p>
+            <p>A journey into the world of butterfly knives.</p>
+          	</div>
+          	</div>
+        	</a>
+
+        	<a href="articles_passions/Why So Serious/article.html">
+        	<div class="image">
+          	<img src="PreviewImages_passions/WhySoSerious_article_preview_pic_web_365x243.jpg">
+          	<div>
+            	<p class="title">WHY SO SERIOUS?</p>
+            	<p>10 vuotta kaikkien aikojen viraalikampanjasta!</p>
+          	</div>
+          	</div>
+        	</a>
+
+        	<a href="articles_passions/4k_machine/4k_machine.html">
+        	<div class="image">
+          	<img src="PreviewImages_passions\4K editing_365.png">
+          	<div>
+            	<p class="title">4K EDITING MACHINE BUILD UNDER 2K</p>
+            	<p>First time builder reports his experience on building his first computer and all the knowledge he gained.</p>
+          	</div>
+          	</div>
+        	</a>
+
+        	<a href="articles_passions/roadtolife/roadtolife.html">
+        	<div class="image">
+          	<img src="PreviewImages_passions/MRTL-BIG.jpg">
+          	<div>
+            	<p class="title">MY ROAD TO LIFE</p>
+            	<p>Today’s society wants everybody to be happy with who they are, but what if we are not?</p>
+          	</div>
+          	</div>
+        	</a>
+
+        	<a href="articles_passions/maailman/maailman.html">
+        	<div class="image">
+          	<img src="PreviewImages_passions/kyro_preview_365x243.jpg">
+          	<div>
+            	<p class="title">MAAILMAN HUIPULLE RUKIIN AVULLA</p>
+            	<p>Kyrö Distillery Companyn suosio ei vaikuta hiipuvan, vaan ruisviskiä valmistavan tislaamon tunnettavuus sen sijaan jatkaa kasvuaan.</p>
+          	</div>
+          	</div>
+        	</a>
+			</div> <!-- white_square -->
+		</div> <!--end of .page -->
+	</body>
 </html>
