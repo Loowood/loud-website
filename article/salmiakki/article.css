@@ -1,12 +1,9 @@
 
-/*display on laptop screen*/
-
 html, body {
     padding: 0;
     margin: 0;
     background-color : #ab2b32;
     font-family: 'Oswald', sans-serif;
-    overflow-x: hidden;
 }
 
 
@@ -14,18 +11,18 @@ html, body {
     text-align: center;
     color: white;
     margin-left: 0.5%;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 0;
     padding-top: 0;
 }
 
 .header img{
-  width: 40%;
+  height: 55%;
   margin-left: 0;
 }
 
 .menu{
-  margin-left: 15%;
+  margin-left: 16%;
   margin-right: 16.7%;
 }
 
@@ -34,6 +31,12 @@ ul {
     overflow: hidden;
     display: inline;
     text-align: center;
+}
+
+li {
+    float: left;
+    margin-left: 6.5%;
+    display: inline;
 }
 
 .white_square {
@@ -54,13 +57,13 @@ ul {
 }
 
 #header{
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Libre Baskervillev', serif;
   margin-bottom: 0;
 }
 
 #first{
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Source Sans Pro 200', sans-serif;
   color: #302D2E;
   width: 80%;
@@ -69,7 +72,7 @@ ul {
 #author{
   text-align: left;
   font-family: 'Libre Baskerville 400', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   color: #464343;
 }
 
@@ -80,7 +83,7 @@ ul {
 
 
 .text figcaption{
-  font-size: 12px;
+  font-size: 15px;
   color: red;
 }
 
@@ -106,7 +109,7 @@ ul {
   border-bottom: none;
   text-align: right;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 35px;
   font-family: 'Libre Baskerville', sans-serif;
 }
 
@@ -116,8 +119,8 @@ ul {
   padding-right: 5%;
   padding-bottom: 2%;
   float: left;
-  width: 30%;
-  height: 50%;
+  width: 50%;
+  height: 90%;
 }
 
 #figcaptionside{
@@ -126,10 +129,6 @@ ul {
   float: left;
   padding-right: 5%;
   padding-bottom: 3%;
-}
-
-.text h2{
-  font-size: 20px;
 }
 
 #previous{
@@ -218,9 +217,19 @@ button{
 
 
 .black_square table{
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 7%;
+  padding-bottom: 7%;
   border-spacing: 30px 0px;
+}
+
+.black_square td{
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+  width: 120px;
+  height: 70px;
 }
 
 
@@ -241,23 +250,23 @@ button{
   margin-left: 46.5%;
 }
 
-/*middle screan display laptop screen */
-@media screen and (max-width: 800px) and (min-width: 500px){
+/*middle screan display*/
+
+@media screen and (max-width: 1000px){
 
   .header img{
-    width: 70%;
+    height: 55%;
     margin-left: 0%;
   }
 
   .menu{
-    margin-left: 10%;
+    margin-left: 7%;
     margin-right: 0%;
     text-align: center;
-    margin-bottom: 10%;
   }
 
   #midscr{
-    padding-left: 13%;
+    padding-left: 25%;
   }
 
   .white_square {
@@ -325,212 +334,21 @@ button{
   }
 
   .black_square table{
-    padding-left: 12%;
+    padding-left: 6%;
     padding-right: 7%;
     padding-top: 8%;
     padding-bottom: 8%;
-    border-spacing: 50px 0px;
+    border-spacing: 0.1% 0%;
   }
 
   .black_square td{
-    width: 100px;
+    width: 70px;
     height: 70px;
   }
 
   .black_bottom p{
     margin-left: 43.5%;
   }
-}
 
 
-/*full screen mac*/
-@media screen and (min-width: 1400px) and (max-width: 2700px){
-	.header {
-    font-size: 35px;
-	}
-
-	.menu{
-	  margin-left: 13%;
-	}
-
-	li {
-	    margin-left: 10%;
-	}
-
-	#author{
- 	 font-size: 15px;
-	}
-
-
-	#see_also{
-  		font-size: 40px;
-	}
-
-
-	.black_square td{
- 	 	width: 300px;
- 	 	height: 150px;
-	}
-
-}
-
-/*middle screen mac*/
-@media screen and (min-width: 800px) and (max-width: 1200px){
-	.header {
-    	font-size: 30px;
-	}
-
-	.menu{
-	  	margin-left: 2.5%;
-		margin-right: 0%;
-	}
-
-	li {
-	    margin-left: 7%;
-	}
-
-
-	.white_square {
-		width: 80%;
-		margin-left: 10%;
-		margin-top: 2%;
-	 }
-
-	#author{
- 	 	font-size: 15px;
-	}
-
-	#image2{
-
-		width: 100%;
-	}
-
-	#figcaptionside{
- 		 width: 100%;
-	}
-
-	#see_also{
-  		font-size: 40px;
-	}
-
- 	.black_square {
-    	width: 80%;
-    	margin-left: 10%;
-  	}
-
-  	.black_square table{
-   	 padding-left: 6%;
-   	 padding-right: 7%;
-   	 padding-top: 8%;
-   	 padding-bottom: 8%;
-   	 border-spacing: 0.1% 0%;
-  	}
-
-	.black_square td{
- 	 	width: 300px;
- 	 	height: 150px;
-	}
-
-  	.black_bottom p{
-   	 margin-left: 43.5%;
-  	}
-
-}
-
-/*phone screen*/
-@media screen and (max-width: 500px){
-  #navbar {
-    margin-left: 25%;
-    margin-right: 12%;
-    margin-top: 12%;
-    display: flex;
-    flex-direction : row;
-    flex-wrap : wrap;
-    width: auto;
-}
-
-  .header img{
-    display: none;
-  }
-
-  .header{
-
-      margin-top: 25%;
-  }
-
-  #image1{
-    height: 30%;
-  }
-
-  #image2{
-    width: 100%;
-    height: 30%;
-  }
-
-  #figcaptionside{
-    width: 100%;
-  }
-
-
-  #previous{
-    float: left;
-    margin-left: 3%;
-    margin-top: 0;
-  }
-
-  #next{
-    float: right;
-    margin-right: 3%;
-    margin-top: 0;
-  }
-
-  button{
-    background-color: white;
-    border: none;
-    font-size: 12px;
-  }
-
-  #previous figcaption{
-    font-size: 12px;
-  }
-
-  #next figcaption{
-    font-size: 12px;
-  }
-
-  #see_also{
-    font-size: 20px;
-    margin-top: 30%;
-    padding-left: 10%;
-    color: #464343;
-    font-family: 'Source Sans Pro Light', sans-serif;
-  }
-
-
-  .table {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 10%;
-  }
-
-  .table p{
-    border-style: solid;
-    border-width: 5px;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    padding-left: 5%;
-    padding-right: 8%;
-    margin-top: 7.5%;
-    text-align: left;
-    font-size: 60%;
-  }
-
-  .tablein{
-    padding-left: 2%;
-  }
-
-  .image3{
-    width: 50%;
-  }
 }
