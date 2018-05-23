@@ -123,6 +123,21 @@
         <div class="black_bottom">
           <p>LOUD MAGAZINE &copy; 2018<p>
         </div>
+		
 	</body>
+	
+	<script>
+		var subtitlesList = document.querySelectorAll("span");
+		var maxSize = 100;
+		
+		for(var i = 0; i < subtitlesList.length; i++) {
+			var contentText = subtitlesList[i].innerHTML;
+			if(contentText.length > maxSize){
+				contentText = contentText.substr(0, maxSize);
+				contentText += "...";
+			}
+			subtitlesList[i].innerHTML = contentText;
+		}
+	</script>
 	
 </html>
