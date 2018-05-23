@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> LOUD 2018 </title>
+        <link style="text/css" rel="stylesheet" href="article.css">
+        <link style="text/css" rel="stylesheet" href="../commun.css">
+        <link href="oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Oswald:300|Source+Sans+Pro:200,300,400" rel="stylesheet">
+    </head>
+    <body>
+
+        <?php include("../top.php"); ?>
+
+        <div class="white_square">
+          <figure class="images">
+            <img id="image1" src="Karttapaikat.jpg" alt="Karttapaikat">
+            <img id="image1" src="LOUDKARTTAVALMIS-01.jpg" alt="LOUDKARTTAVALMIS-01">
+          </figure>
+          <div>
+            <div id="previous">
+              <button>previous article</button>
+              <figcaption> Aliquam erat volutpat</figcaption>
+            </div>
+
+            <div id="next">
+              <button>next article</button>
+              <figcaption> Aliquam erat volutpat</figcaption>
+            </div>
+          </div>
+
+          <div>
+            <p id="see_also">See Also:</p>
+
+                    <?php include("../bottom.php"); ?>
+
+        <div class="black_bottom">
+          <p>LOUD MAGAZINE &copy; 2018<p>
+        </div>
+    </body>
+</html>
