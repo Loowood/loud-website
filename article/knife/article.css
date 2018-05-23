@@ -196,6 +196,31 @@ button{
   border-color: blue;
 }
 
+#previous, #next{
+	display: flex;
+	flex-direction: column;
+}
+
+#previous p {
+	text-align: left;
+}
+
+#next p {
+	text-align: right;
+}
+
+#previous a, #next a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
+}
+
+#previous a:hover, #next a:hover {
+	text-decoration: none;
+	color: #5E5E5E;
+	font-size: 20px;
+}
+
 .black_square {
   width: 60%;
   height: auto;
