@@ -1,5 +1,10 @@
 body {
 	height: 100%;
+	background-color : #ab2b32;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #outerBox {
@@ -10,6 +15,11 @@ body {
 	overflow: auto;
 	text-align: center;
 	margin-bottom: 5%;
+}
+
+.image
+{
+	width: 100%;
 }
 
 /******************************
@@ -48,6 +58,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
+	font-family: 'Oswald', sans-serif;
 }
 
 #navbar ul {
@@ -74,6 +85,11 @@ body {
 	margin-right: auto;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
 #contentOuterBox {
 	background-color: #FFFFFF;
 	padding-bottom: 5%;
@@ -91,8 +107,6 @@ h1 {
 	font-family: 'Source Sans Pro';
 	font-size: 50px;
 }
-
-
 
 
 /******************************
@@ -248,11 +262,11 @@ td.right {
 	margin-left: 46.5%;
 }
 
-@media (max-width: 1000px) {
-	#navbar a {
-		flex: 0 0 25%;
-	}
+.page
+{
+	display: none;
 }
+
 
 /* mobile phone size & iPad size for example */
 
