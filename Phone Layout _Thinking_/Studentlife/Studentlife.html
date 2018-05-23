@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset=utf-8>
+
+		    <title> LOUD 2018 </title>
+		    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+
+		    <meta name="description" content="LOUD magazine - website version - 2018">
+		    <meta name="author" content="Students of SeAMK" />
+		    <meta name="keywords" content = "">
+
+        <link style="text/css" rel="stylesheet" href="Studentlife.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    </head>
+
+
+
+    <body>
+
+		<div class="page">
+
+			<div class="header">
+
+				<div class="logo">
+					<a href="index.html"> <img src="logo.png"> </a>
+				</div> <!--end of .logo -->
+
+			</div> <!--end of .header -->
+
+
+
+			<h1> STUDENT LIFE </h1>
+
+			<div class="dropdown">
+
+				<button onclick="drop();  change(this) " class="dropbtn">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</button>
+
+				<div id="myDropdown" class="dropdown-content">
+					<a href="culture.html">CULTURE</a>
+					<a href="entertainment.html">ENTERTAINMENT</a>
+					<a href="passions.html">PASSIONS</a>
+					<a href="student-life.html">STUDENT LIFE</a>
+					<a href="partners.html">PARTNERS</a>
+				</div> <!--end of .dropdown-content -->
+
+			</div> <!--end of .dropdown -->
+
+
+			<script>
+			/* When the user clicks on the button, the bars become a cross */
+			function change(x) {
+				x.classList.toggle("change");
+			}
+
+			/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function drop() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+			</script>
+
+
+
+			<div class="white_square">
+        <a href="article">
+          <img src="Opi.png" alt="opi">
+          <div>
+            <p class="title">OPISKELIJA BUDJETTI</p>
+            <p>Päiväkodista asti meidät on lautasmallin ja ruokapyramidin avulla opetettu syömään oikein. Korkeakoulussa nämä opit asettuvat helposti haasteeksi. Miten opiskelijabudjetilla selviytydytään tästä haasteesta?</p>
+          </div>
+        </a>
+
+        <a href="article">
+          <img src="cultureshockSmall.jpg" alt="culture shock">
+          <div>
+            <p class="title">MY CULTURE SHOCK</p>
+            <p>Living and studying in Finland can be quite a shock for foreign people. As a French student many things shocked me. Even if you travel a lot during holidays, it may not prepare you to stay in another country for a long time. It is a very different experience. You will see things and experience a lifestyle in some ways you couldn’t even imagine.</p>
+          </div>
+        </a>
+
+        <a href="article">
+          <img src="Seinamap.jpg" alt="ponton">
+          <div>
+            <p class="title">THE MAP OF SEINÄJOKI</p>
+            <p>This is the map of Seinäjoki centrum where you can do differend activities from meeting your friends at cosy cafés or enjoying daily activities such as shopping and relaxing at refreshing parks.</p>
+          </div>
+        </a>
+
+			</div> <!-- white_square -->
+
+		</div> <!--end of .page -->
+
+    </body>
+
+</html>

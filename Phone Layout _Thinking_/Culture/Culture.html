@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset=utf-8>
+
+		    <title> LOUD 2018 </title>
+		    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+
+		    <meta name="description" content="LOUD magazine - website version - 2018">
+		    <meta name="author" content="Students of SeAMK" />
+		    <meta name="keywords" content = "">
+
+        <link style="text/css" rel="stylesheet" href="Culture.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    </head>
+
+
+
+    <body>
+
+		<div class="page">
+
+			<div class="header">
+
+				<div class="logo">
+					<a href="index.html"> <img src="logo.png"> </a>
+				</div> <!--end of .logo -->
+
+			</div> <!--end of .header -->
+
+
+
+			<h1> CULTURE </h1>
+
+			<div class="dropdown">
+
+				<button onclick="drop();  change(this) " class="dropbtn">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</button>
+
+				<div id="myDropdown" class="dropdown-content">
+					<a href="culture.html">CULTURE</a>
+					<a href="entertainment.html">ENTERTAINMENT</a>
+					<a href="passions.html">PASSIONS</a>
+					<a href="student-life.html">STUDENT LIFE</a>
+					<a href="partners.html">PARTNERS</a>
+				</div> <!--end of .dropdown-content -->
+
+			</div> <!--end of .dropdown -->
+
+
+			<script>
+			/* When the user clicks on the button, the bars become a cross */
+			function change(x) {
+				x.classList.toggle("change");
+			}
+
+			/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function drop() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+			</script>
+
+
+
+			<div class="white_square">
+        <a href="article">
+          <img src="sasu.png" alt="sasu">
+          <div>
+            <p class="title">FASHION FOR EVERYBODY</p>
+            <p>As I walk towards the crude warehouse right next to Hotel Clarion, in Jätkäsaari, Helsinki, I can’t help but think about what Kanye West thought when he arrived here in November 2014. Inside the rough outlooks is just as rough a staircase, with some posters taped on the walls. </p>
+          </div>
+        </a>
+
+        <a href="article">
+          <img src="shlag.jpg" alt="man">
+          <div>
+            <p class="title">NÄYTTELIJÄ</p>
+            <p>“Asennemuutos on aika voimakas ja tietysti mielipide siitä, mihin suuntaan ollaan menossa on hyvin voimakas.” - Mia Vuorela</p>
+          </div>
+        </a>
+
+        <a href="article">
+          <img src="pursuit.jpg" alt="pursuit">
+          <div>
+            <p class="title">IN PURSUIT OF HAPPINESS</p>
+            <p>Everyone would agree that being happy is anyone's ultimate goal. If this is fundamentally the only goal in one's life, why is it that so many people can't achieve it? Why is happiness so hard to gain and especially hard to maintain?</p>
+          </div>
+        </a>
+
+        <a href="article">
+          <img src="shh.jpg" alt="shh">
+          <div>
+            <p class="title">SHH...</p>
+            <p>Kuuntele. Mitä kaikkea ympärilläsi tapahtuu? Kuuletko puheen sorinaa, liikenteen melua tai musiikkia? </p>
+          </div>
+        </a>
+
+        <a href="article">
+          <img src="Moominsmall.jpg" alt="moom">
+          <div>
+            <p class="title">COMICS FROM FINLAND</p>
+            <p>Finland, country of lakes and saunas, also has an impressive number of diverse comics.</p>
+          </div>
+        </a>
+
+			</div> <!-- white_square -->
+
+		</div> <!--end of .page -->
+
+    </body>
+
+</html>
