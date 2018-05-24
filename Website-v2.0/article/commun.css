@@ -1,0 +1,91 @@
+#columnCulture{
+  border-color: #8cc640;
+}
+
+#columnEntertainment{
+  border-color: #ffcb04;
+}
+
+#columnStudentLife{
+  border-color: #35b4b9;
+}
+
+#columnPassion{
+  border-color: #ee3035;
+}
+
+* { box-sizing: border-box; }
+
+#outerBox {
+    width: auto;
+    min-height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: auto;
+    text-align: center;
+}
+
+#upperBox {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#placeholder-image {
+    margin: auto;
+    width: 50%;
+    height: 90%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#placeholder-image a img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#navbar {
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#navbar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#navbar li {
+	flex: 0 0 20%;
+}
+
+#navbar a {
+	flex: 0 0 20%;
+	white-space: nowrap;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.text p {
+	text-align: justify;
+}

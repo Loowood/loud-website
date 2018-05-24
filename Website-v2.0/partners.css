@@ -1,0 +1,135 @@
+/* this CSS is based on a 1024x640 basic device, and is responsive to other sizes thanks to media queries */
+
+.page
+{
+	margin: auto;
+	width: 90%;
+}
+
+img {
+	max-width: 100%;
+}
+.ie6 img {
+	width: 100%;
+}
+
+
+@font-face {
+	font-family: 'Oswald-Light';
+	src: url("Oswald-Light.ttf");
+}
+
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color : #ab2b32;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+    font-family: 'Oswald';
+    text-align: center;
+    color: white;
+    font-size: 30px;
+	display: flex;
+	width: auto;
+	margin-top: 15%;
+	margin-bottom: 5%;
+	justify-content: center;
+}
+
+.logo {
+    margin-top: -12%;
+    position: absolute;
+    width: 30%;
+}
+
+.headerDivs {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
+
+#navbar {
+	width: 90%;
+}
+ul {
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#navbar a {
+    float: left;
+    margin-left: 3%;
+	margin-right: 3%;
+	width: auto;
+	color: white;
+	text-decoration: none;
+}
+
+.partners .lign1, .partners .lign2{
+	display: flex;
+	flex-direction : row;
+	flex-wrap : wrap;
+	margin: auto;
+	justify-content: center;
+}
+
+.partners .lign1 {
+	margin-bottom: 5%;
+}
+
+.bloc {
+	height: 5em;
+	width: 12em;
+	/* background-color: #000;   to see the real div size behing img */
+	margin-top: 9%;
+}
+
+#p5, #p6 {
+	height: 10em;
+	margin-top: 3%;
+}
+
+#p1, #p2, #p3, #p4, #p6, #p7, #p8, #p9 {
+	margin-right: 3.5%;
+}
+
+
+
+
+
+/* ------- MEDIA QUERIES  ------- */
+
+
+/* computer rooms screen size for example */
+@media screen and (min-width: 1900px) {
+	.page {
+		width: 60%;
+		margin-top: 12%;
+	}
+
+	.logo {
+		margin-top: -12%;
+		width:25%;
+	}
+
+	.header {
+    font-size: 150%;
+	}
+
+}
