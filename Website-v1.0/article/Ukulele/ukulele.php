@@ -39,7 +39,7 @@ and they were tuned differently.
      </p>
 
            <p>Although this musical instrument is relatively recent, the etymology of its name is uncertain. Among the most probable hypotheses, the term ukulele is thought to be a ukelele deformation. This name would have been formed by the two words &quot;uke&quot; and &quot;lele&quot;, which mean respectively &quot;to scratch&quot; and &quot;to strike&quot; which describe the movements of the hand which scratches the strings.</p>
-           <center> <iframe width="960" height="540" src="https://www.youtube.com/embed/AvJvCxd0pM8?rel=0 " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </center> 
+           <center> <iframe width="100%" height="60%" src="https://www.youtube.com/embed/AvJvCxd0pM8?rel=0 " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </center> 
      <h2>Ready to start ?</h2>
 
      <p>Learning ukulele is done with chord diagrams and a tablature (graphic score). I don&#39;t use scores that are too complicated to read (even for those who have already play a music instrument like me before) and very demotivating, most players do the same.</p>
